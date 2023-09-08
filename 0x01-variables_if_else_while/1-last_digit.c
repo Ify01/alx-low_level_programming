@@ -23,11 +23,11 @@ int main(void)
 	}
 	else if (mystery > 0 && mystery <= 5)
 	{
-		printf("Last digit of %d is %d and is less than 6 and not 6\n", n, mystery);
+		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, mystery);
 	}
 	else if (mystery < 0)
 	{
-		printf("Last digit of %d id %d and is less then 6 and not 6\n", n, mystery);
+		printf("Last digit of %d id %d and is less then 6 and not 0\n", n, mystery);
 	}
 	else
 	{
