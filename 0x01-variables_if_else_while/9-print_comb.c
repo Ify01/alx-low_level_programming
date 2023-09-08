@@ -13,13 +13,11 @@ int main(void)
 	while (orderValues < 10)
 	{
 		putchar(orderValues + '0');
-		
 		if (orderValues != 9)
 		{
 			putchar(',');
 			putchar(' ');
 		}
-		
 		orderValues++;
 	}
 
