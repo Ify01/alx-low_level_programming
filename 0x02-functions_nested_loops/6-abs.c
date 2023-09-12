@@ -2,18 +2,18 @@
 
 /**
  * _abs - printing the absolute value
- * @absoluteValue: print Value
+ * @absoluteNumberReturn: print Value
  * Return: success or error
  */
 
-int _abs(int absoluteValue)
+int _abs(int absoluteNumberReturn)
 {
-	if (absoluteValue < 0)
+	if (absoluteNumberReturn < 0)
 	{
-		return (-absoluteValue);
+		return (-absoluteNumberReturn);
 	}
 	else
 	{
-		return (absoluteValue);
+		return (absoluteNumberReturn);
 	}
 }
