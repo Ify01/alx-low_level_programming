@@ -2,7 +2,7 @@
 
 /**
  * print_sign - printing different signs
- * @N: initailizing n
+ * @n: initailizing n
  * Return: return successful
  */
 
