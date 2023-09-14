@@ -2,7 +2,7 @@
 
 /**
  * _isupper - printing check for upper case
- * @C: the character
+ * @c: the character
  * Return: success or error
  */
 
