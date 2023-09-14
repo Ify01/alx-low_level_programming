@@ -3,7 +3,7 @@
 /**
  * _isupper - printing check for upper case
  * @c: the character
- * Return: success or error
+ * Return: succes or error
  */
 
 int _isupper(int c)
