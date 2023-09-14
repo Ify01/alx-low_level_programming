@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * _isupper - printing letters
- * @c: letters
+ * _isupper - printing digits
+ * @c: digits
  * Return: success or error
  */
 
 int _isupper(int c)
 {
-	if (c == 'A' && c != 'a')
+	if (c >= '0' && c <= '9')
 	{
 		return (1);
 	}
