@@ -1,0 +1,19 @@
+#include "main.h"
+
+/**
+ * _isupper - printing check for upper case
+ * @C: the character
+ * Return: success or error
+ */
+
+int _isupper(int c)
+{
+	if (c == 'A')
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
+}
