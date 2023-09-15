@@ -19,8 +19,8 @@ void more_numbers(void)
 			{
 				_putchar((values / 10) + '0');
 			}
-			_putchar((values % 10) + '0');
+				_putchar((values % 10) + '0');
 		}
-	_putchar('\n');
+		_putchar('\n');
 	}
 }
