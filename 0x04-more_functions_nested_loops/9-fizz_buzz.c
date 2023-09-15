@@ -13,20 +13,26 @@ int main(void)
 	{
 		if (fizzBuzzing % 3 == 0 && fizzBuzzing % 5 == 0)
 		{
-			printf("FizzBuzz ");
+			printf("FizzBuzz");
 		}
 		else if (fizzBuzzing % 3 == 0)
 		{
-			printf("Fizz ");
+			printf("Fizz");
 		}
 		else if (fizzBuzzing % 5 == 0)
 		{
-			printf("Buzz ");
+			printf("Buzz");
 		}
 		else
 		{
-			printf("%d ", fizzBuzzing);
+			printf("%d", fizzBuzzing);
 		}
+		if (fizzBuzzing != 100)
+		{
+			printf(" ");
+		}
+
 	}
+	printf("\n");
 	return (0);
 }
