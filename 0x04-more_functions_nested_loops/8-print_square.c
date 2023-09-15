@@ -2,7 +2,7 @@
 
 /**
  * print_square - hashtag(#) printing
- * @n: dash
+ * @size: size and length of square
  * Return: success or error
  */
 
