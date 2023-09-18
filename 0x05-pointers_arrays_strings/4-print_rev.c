@@ -15,7 +15,7 @@ void print_rev(char *s)
 
 	for (stringLetter = reverseStringOrder - 1; stringLetter >= 0; stringLetter--)
 	{
-		_putchar(s[stringLetters]);
+		_putchar(s[stringLetter]);
 	}
 	_putchar('\n');
 }
