@@ -11,13 +11,12 @@ void puts2(char *str)
 {
 	int twoStep = 0;
 
-	for (twoStep = 0; str[twoStep] != '\0'; twoStep += 2)
+	for (twoStep = 0; str[twoStep] != '\0'; twoStep++)
 	{
 		if (twoStep % 2 == 0)
 		{
 			_putchar(str[twoStep]);
 		}
-		
 	}
 	_putchar('\n');
 }
