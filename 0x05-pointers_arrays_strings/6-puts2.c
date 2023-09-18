@@ -9,12 +9,12 @@
 
 void puts2(char *str)
 {
-	int twoSteps = 0;
+	int twoStep = 0;
 
-	while (str[twoSteps] != '\0')
+	while (str[twoStep] != '\0')
 	{
-		_putchar(str[twoSteps]);
-		twoSteps = twoSteps + 2;
+		_putchar(str[twoStep]);
+		twoStep += 2;
 	}
 	_putchar('\n');
 }
