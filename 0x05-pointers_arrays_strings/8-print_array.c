@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * print_array - printing string in half when the total is zero
@@ -17,7 +18,7 @@ void print_array(int *a, int n)
 		{
 			printf(", ");
 		}
-		printf("%d", arr[orderlyArray]);
+		printf("%d", a[orderlyArray]);
 		orderlyArray++;
 	}
 	printf("\n");
