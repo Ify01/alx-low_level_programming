@@ -3,7 +3,7 @@
 /**
  * _strcpy - string copying from one to another
  * @dest: the string of the function
- * @scr: the string function
+ * @src: the string function
  * Return: Always 0.
  */
 
