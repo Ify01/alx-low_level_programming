@@ -10,29 +10,29 @@
 
 char *cap_string(char *str)
 {
-	int capitalizeNext = 1;
+	int expect = 1;
 	int i = 0;
 
 	while (str[i] != '\0')
 	{
 		if (str[i] >= 'a' && str[i] <= 'z')
 		{
-			if (capitalizeNext || i == 0)
+			if (expect || i == 0)
 			{
 				str[i] = str[i] & ~32;
 			}
-			capitalizeNext = 0;
+			expect = 0;
 		}
 		else if (str[i] == ' ' || str[i] == '\t' || str[i] == '\n' || str[i]
 == ',' || str[i] == ';' || str[i] == '.' || str[i] == '!' || str[i] == '?'
 || str[i] == '\"' || str[i] == '(' || str[i] == ')' || str[i] == '{' ||
 str[i] == '}')
 		{
-			capitalizeNext = 1;
+			expect = 1;
 		}
 		else
 		{
-			capitalizeNext = 0;
+			expect = 0;
 		}
 		i++;
 	}
