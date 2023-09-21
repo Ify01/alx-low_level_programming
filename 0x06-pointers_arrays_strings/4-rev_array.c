@@ -15,9 +15,10 @@ void reverse_array(int *a, int n)
 	while (ascend < descend)
 	{
 		int outputting = a[ascend];
+
 		a[ascend] = a[descend];
 		a[descend] = outputting;
-	
+
 		ascend++;
 		descend--;
 	}
