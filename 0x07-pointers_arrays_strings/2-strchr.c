@@ -9,14 +9,16 @@
 
 char *_strchr(char *s, char c)
 {
-	while (*s != '\0')
+	int locate;
+
+	for (locate = 0; s[locate] >= '\0'; locate++)
 	{
-		if (*s == c)
+		if (s[locate] == c)
 		{
-			return (s);
+			return (s + locate);
 		}
-		s++;
 	}
 
-	return (0);
+	return ('\0');
 }
+
