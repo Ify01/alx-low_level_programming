@@ -11,14 +11,15 @@
 
 int secondFunc(int n, int count, int value)
 {
+	int num;
+	int root;
+
 	if (count > value)
 	{
 		return (-1);
 	}
 
-	int num; 
 	num = count + (value - count) / 2;
-	int root;
 	root = num * num;
 
 	if (root == n)
