@@ -14,14 +14,13 @@ int is_prime_number(int n)
 	{
 		return (0);
 	}
-	
+
 	for (prime = 2; prime * prime <= n; prime++)
 	{
 		if (n % prime == 0)
 		{
-			return (0); 
+			return (0);
 		}
 	}
-	
-	return (1); 
+	return (1);
 }
