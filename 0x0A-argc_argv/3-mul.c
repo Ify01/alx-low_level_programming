@@ -12,19 +12,20 @@
 
 int main(int argc, char *argv[])
 {
-	int firstArgs = atoi(argv[1]);
-	int secondArgs = atoi(argv[2]);
-	int argResult = firstArgs * secondArgs;
-	(void)argv;
+	int firstArgs;
+	int secondArgs;
+	int argResult;
 
 	if (argc != 3)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	else
-	{
-		printf("%d\n", argResult);
-	}
+
+	firstArgs = atoi(argv[1]);
+	secondArgs = atoi(argv[2]);
+	argResult = firstArgs * secondArgs;
+
+	printf("%d\n", argResult);
 	return (0);
 }
