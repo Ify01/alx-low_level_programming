@@ -12,7 +12,7 @@ char *create_array(unsigned int size, char c)
 {
 	unsigned int i;
 
-	char *allocatedSize = (char *)malloc((size + 1) * sizeof(char));
+	char *allocatedSize = (char *)malloc((size) * sizeof(char));
 
 	if (size == 0)
 	{
@@ -29,6 +29,5 @@ char *create_array(unsigned int size, char c)
 		allocatedSize[i] = c;
 	}
 
-	allocatedSize[size] = '\0';
 	return (allocatedSize);
 }
