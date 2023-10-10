@@ -5,6 +5,9 @@
 /**
  * new_dog - a function that creates a new dog.
  * Return: success or error
+ * @name: dog name
+ * @age: dog age
+ * @owner: dog owner
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
