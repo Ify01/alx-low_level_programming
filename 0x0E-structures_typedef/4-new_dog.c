@@ -4,10 +4,10 @@
 #include <string.h>
 /**
  * new_dog - a function that creates a new dog.
+ * @name: name
+ * @age: age
+ * @owner: owner
  * Return: success or error
- * @name: dog name
- * @age: dog age
- * @owner: dog owner
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
