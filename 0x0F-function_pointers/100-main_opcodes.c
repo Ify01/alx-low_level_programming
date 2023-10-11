@@ -1,59 +1,49 @@
 #include <stdio.h>
 #include <stdlib.h>
-
 /**
- * print_opcodes - Print opcodes of the given function.
- * @func: Pointer to the function.
- * @size: Number of bytes to print.
+ * print_opcodes - a program that prints the opcodes of its own main function.
+ * @programPtr: the main.
+ * @num_bytes: the number.
  */
-void print_opcodes(void *func, int size)
+
+void print_opcodes(unsigned char *programPtr, int num_bytes)
 {
-	unsigned char *opcodes = (unsigned char *)func;
 	int program;
 
-	for (program = 0; program < size; program++)
+	for (program = 0; program < num_bytes; program++)
 	{
-		printf("%02x", opcodes[program]);
-
-		if (program < size - 1)
+		printf("%02x", programPtr[program]);
+		if (program < num_bytes - 1)
 		{
 			printf(" ");
 		}
-		else
-		{
-			printf("\n");
-		}
 	}
+	printf("\n");
 }
 
 /**
- * main - Entry point.
- * @argc: Argument count.
- * @argv: Argument vector.
- * Return: 0 on success, 1 for incorrect arguments, 2 for negative size.
+ * main - a program that prints the opcodes of its own main function.
+ * @argc: the arguments.
+ * @argv: the arguments.
+ * Return: success or error.
  */
 int main(int argc, char *argv[])
 {
-	int size;
-
 	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
+	int size = atoi(argv[1]);
 
-	size = atoi(argv[1]);
-
-	if (size < 0)
+	if (size <= 0)
 	{
 		printf("Error\n");
 		return (2);
 	}
+	unsigned char *programPtr = (unsigned char *)main;
 
-	void (*print_function)(void *, int) = print_opcodes;
-
-	print_function(print_function, size);
+	print_opcodes(programPtr, size);
 
 	return (0);
 }
-
