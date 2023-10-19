@@ -2,7 +2,7 @@
 
 /**
  * print_list - a function that prints all the elements of a list_t list.
- * *h: the element
+ * @h: the element
  * Return: the number of nodes
  */
 
