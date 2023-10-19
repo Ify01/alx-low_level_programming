@@ -1,14 +1,24 @@
 #include <stdio.h>
 
 /**
- * before_main_message - prints
+ * theFunction - prints
  * Return: success or error
  */
 
-void theFunction() __attribute__((constructor));
-
-void theFunction()
+void theFunction(void)
 {
 	printf("You're beat! and yet, you must allow,\n");
 	printf("I bore my house upon my back!\n");
+}
+
+void theCall(void) __attribute__((constructor));
+
+/**
+ * theCall - the call
+ * Return: success or error
+ */
+
+void theCall(void)
+{
+	theFunction();
 }
