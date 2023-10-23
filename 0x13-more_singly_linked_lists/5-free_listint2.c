@@ -8,11 +8,21 @@
 void free_listint2(listint_t **head)
 {
 	listint_t *freeFunc;
+	listint_t *freeTemp;
 
-	while (*head != NULL)
+	if (head == NULL)
 	{
-		freeFunc = *head;
-		*head = (*head)->next;
-		free(freeFunc);
+		return;
 	}
+
+	freeFunc = *head;
+
+	while (freeFunc != NULL)
+	{
+		freeTemp = freeFunc;
+		freeFunc = freeFunc->next;
+		free(freeTemp);
+	}
+
+	*head = NULL;
 }
