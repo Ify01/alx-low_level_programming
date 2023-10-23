@@ -9,7 +9,7 @@ void free_listint2(listint_t **head)
 {
 	listint_t *freeFunc;
 
-	while (head != NULL)
+	while (*head != NULL)
 	{
 		freeFunc = *head;
 		*head = (*head)->next;
