@@ -17,7 +17,6 @@ void exit_error(int code, const char *format, int arg)
 	dprintf(STDERR_FILENO, format, arg);
 	exit(code);
 }
-
 /**
  * main - the main
  * @argc: arguments.
@@ -73,4 +72,3 @@ int main(int argc, char *argv[])
 
 	return (0);
 }
-
