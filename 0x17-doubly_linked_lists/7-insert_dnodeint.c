@@ -4,7 +4,7 @@
  * insert_dnodeint_at_index - a function that inserts a new node
  * @h: the head
  * @idx: the index
- * @n: the  value 
+ * @n: the value 
  * Return: success or error
  */
 
