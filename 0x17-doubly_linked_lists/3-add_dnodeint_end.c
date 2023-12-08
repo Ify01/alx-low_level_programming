@@ -1,7 +1,8 @@
 #include "lists.h"
 
 /**
- * add_dnodeint - a function that adds a new node at the beginning
+ * add_dnodeint_end - a function that adds a new node at the end
+ *
  * @head: head
  * @n: value
  * Return: success or error
