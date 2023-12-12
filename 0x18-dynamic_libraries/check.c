@@ -13,49 +13,49 @@ int add(int a, int b)
 }
 
 /**
- * minus - substracting
+ * sub - substracting
  * @a: value
  * @b: value
  * Return: success or error
  */
 
-int minus(int a, int b)
+int sub(int a, int b)
 {
 	return (a - b);
 }
 
 /**
- * divide - adding
+ * div - dividing
  * @a: value
  * @b: value
  * Return: success or error
  */
 
-int divide(int a, int b)
+int div(int a, int b)
 {
 	return (a / b);
 }
 
 /**
- * times - multiplication
+ * mul - multiplication
  * @a: value
  * @b: value
  * Return: success or error
  */
 
-int times(int a, int b)
+int mul(int a, int b)
 {
 	return (a * b);
 }
 
 /**
- * remain - remaining
+ * mod - remaining
  * @a: value
  * @b: value
  * Return: success or error
  */
 
-int remain(int a, int b)
+int mod(int a, int b)
 {
 	return (a % b);
 }
