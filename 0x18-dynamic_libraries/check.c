@@ -55,7 +55,7 @@ int times(int a, int b)
  * Return: success or error
  */
 
-int reminder(int a, int b)
+int remainder(int a, int b)
 {
 	return (a % b);
 }
